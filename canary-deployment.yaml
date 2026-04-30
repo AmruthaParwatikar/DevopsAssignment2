@@ -1,0 +1,14 @@
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: aceestfitness
+  template:
+    metadata:
+      labels:
+        app: aceestfitness
+        track: canary
+    spec:
+      containers:
+      - name: aceestfitness
+        image: amrutaparwatikar/aceestfitness:1.2.0

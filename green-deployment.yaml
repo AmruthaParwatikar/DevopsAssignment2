@@ -1,0 +1,15 @@
+metadata:
+  name: aceestfitness-green
+spec:
+  selector:
+    matchLabels:
+      version: green
+  template:
+    metadata:
+      labels:
+        app: aceestfitness
+        version: green
+    spec:
+      containers:
+      - name: aceestfitness
+        image: amrutaparwatikar/aceestfitness:1.1.0

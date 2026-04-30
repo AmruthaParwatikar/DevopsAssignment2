@@ -1,0 +1,15 @@
+metadata:
+  name: aceestfitness-blue
+spec:
+  selector:
+    matchLabels:
+      version: blue
+  template:
+    metadata:
+      labels:
+        app: aceestfitness
+        version: blue
+    spec:
+      containers:
+      - name: aceestfitness
+        image: amrutaparwatikar/aceestfitness:1.0.0
